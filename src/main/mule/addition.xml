@@ -145,7 +145,7 @@ output application/json
 output application/json
 ---
 {
-  add: payload.num1 + payload.num2
+  	add: payload.num1 + payload.num2
 }]]></ee:set-payload>
             </ee:message>
         </ee:transform>
