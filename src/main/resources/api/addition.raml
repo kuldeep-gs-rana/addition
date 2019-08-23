@@ -1,0 +1,30 @@
+#%RAML 1.0
+version: v1
+title: Addition
+
+/add:
+  get:
+    queryParameters:
+      num1:
+        type: number
+        required: true
+      num2:
+        type: number
+        required: true
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {"message" : "addition done"}
+    
+  post:
+    body:
+      application/json:
+        example:         
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {"message" : "Numbers added"}
